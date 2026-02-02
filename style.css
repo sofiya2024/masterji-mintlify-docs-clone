@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, Arial, sans-serif;
+}
+
+body {
+  background-color: #020617;
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 15px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* LOGO */
+.logo img {
+  height: 26px;
+}
+
+/* LINKS */
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #cbd5e1;
+  font-weight: bold;
+}
+
+.links a:hover {
+  color: #ffffff;
+}
+
+/* CTA BUTTONS */
+.cta {
+  display: flex;
+  gap: 14px;
+}
+
+.contact-sales {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.start-free {
+  background: #ffffff;
+  color: #020617;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* HERO SECTION */
+.hero {
+  position: absolute;
+  background-image: url("/assets/images/bg-dark.svg");
+  background-size: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 120vh;
+  width: 100%;
+  padding: 300px;
+  z-index: -1;
+  top: -50px;
+}
+
+.hero-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* BADGE */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  margin-bottom: 40px;
+  margin-top: -350px;
+}
+
+.badge-new {
+  background: #22c55e;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.badge-text {
+  color: #e5e7eb;
+}
+
+.badge-arrow {
+  color: #94a3b8;
+}
+
+/* HEADLINE */
+.hero h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* SUBTEXT */
+.hero-subtext {
+  font-size: 18px;
+  color: #cbd5e1;
+  max-width: 700px;
+  margin: 0 auto 36px;
+}
+
+/* CTA */
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px;
+  border-radius: 999px;
+}
+
+.hero-cta input {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 25px;
+  color: white;
+  font-size: 15px;
+  width: 260px;
+}
+
+.hero-cta input::placeholder {
+  color: #bbb6b6;
+}
+
+.hero-cta button {
+  background: white;
+  color: #020617;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
