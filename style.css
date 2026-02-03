@@ -20,9 +20,6 @@ body {
 .navbar {
   width: 100%;
   border-bottom: 0px solid rgba(255, 255, 255, 0.05);
-  position: fixed;
-  top: 0;
-  z-index: 100;
 }
 
 .nav-container {
@@ -86,17 +83,12 @@ body {
 
 /* HERO SECTION */
 .hero {
-  position: relative;
   background-image: url("/assets/images/bg-dark.svg");
   background-size: 100%;
   color: var(--primary-white);
-  display: flex;
-  align-items: center;
   height: 120vh;
   width: 100%;
-  padding: 300px;
-  z-index: -1;
-  top: -30px;
+  padding: 40px 80px 120px;
 }
 
 .hero-container {
@@ -104,7 +96,7 @@ body {
   margin: auto;
   text-align: center;
   padding: 0 20px;
-  margin-top: -165px;
+  margin-top: 0;
 }
 
 /* BADGE */
@@ -117,7 +109,7 @@ body {
   border-radius: 999px;
   font-size: 14px;
   margin-bottom: 40px;
-  margin-top: -350px;
+  margin-top: 0;
 }
 
 .badge-new {
@@ -193,9 +185,12 @@ body {
   background: #030405;
   width: 70%;
   border: 3px solid rgba(255,255,255,0.05);
-  box-shadow: var(--primary-color);
+  box-shadow: 3px var(--primary-color);
   border-radius: 20px;
-  margin: -400px 12.5%;
+  margin-top: -450px;   /* small overlap */
+margin-left: 220px;
+  position: relative;
+  z-index: 2;
 }
 
 .docs-container {
@@ -325,15 +320,17 @@ body {
 }
 
 /* CARDS */
-.doc-card {
-
-  padding: 20px;
-}
 
 .doc-card h4 {
   margin-bottom: 8px;
   font-size: 12px;
   color: #8f8c8c;
+}
+
+.doc-card img{
+  height: 115px;
+  margin-bottom: 12px;
+  border-radius: 10px;
 }
 
 .doc-card p {
@@ -364,4 +361,21 @@ body {
 
 .docs-toc li.active {
   color: var(--primary-color);
+}
+
+/* trusted logos */
+.trusted-logos {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 40px 60px;
+  padding: 60px 0;
+  background-color: #020617;
+}
+
+.trusted-logos img {
+  height: 280px;
+  opacity: 0.7;
+  padding-left: 120px;
 }
