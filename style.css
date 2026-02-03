@@ -12,12 +12,13 @@
 }
 
 body {
-  background-color: #020617;
+  background-color: #010911;
   color: var(--primary-white);
 }
 
 /* NAVBAR */
 .navbar {
+    position: fixed;
   width: 100%;
   border-bottom: 0px solid rgba(255, 255, 255, 0.05);
 }
@@ -88,7 +89,7 @@ body {
   color: var(--primary-white);
   height: 120vh;
   width: 100%;
-  padding: 40px 80px 120px;
+  padding: 80px 80px 120px;
 }
 
 .hero-container {
@@ -187,10 +188,9 @@ body {
   border: 3px solid rgba(255,255,255,0.05);
   box-shadow: 3px var(--primary-color);
   border-radius: 20px;
-  margin-top: -450px;   /* small overlap */
+  margin-top: -450px;  
 margin-left: 220px;
   position: relative;
-  z-index: 2;
 }
 
 .docs-container {
@@ -205,7 +205,6 @@ margin-left: 220px;
   border-right: 1px solid rgba(255,255,255,0.08);
   padding: 10px;
   width: 200px;
-  flex-shrink: 0;
 }
 
 .sidebar-logo img {
@@ -371,11 +370,100 @@ margin-left: 220px;
   align-items: center;
   gap: 40px 60px;
   padding: 60px 0;
-  background-color: #020617;
 }
 
 .trusted-logos img {
   height: 280px;
-  opacity: 0.7;
   padding-left: 120px;
+}
+
+/* INTELLIGENCE SECTION */
+.intelligence {
+  padding: 120px 60px;
+  background-color: #010911;
+  color: #fff;
+}
+
+.intelligence-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 80px;
+}
+
+.intelligence-header h2 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.intelligence-header p {
+  color: #cbd5e1;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* CARDS */
+.intelligence-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.intel-card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 30px;
+  position: relative;
+}
+
+.intel-card-wide {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 50px;
+    margin-top: 40px;
+}
+
+.wide-mock img {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 16px;
+}
+
+.card-tag {
+  color: #18e299;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.intel-card h3 {
+  font-size: 24px;
+  margin: 16px 0;
+}
+
+.intel-card p {
+  font-size: 14px;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+/* LEFT MOCK UI */
+.mock-ui {
+  margin-top: 40px;
+  background: #010911;
+  border-radius: 14px;
+  padding: 20px;
+  position: relative;
+}
+
+/* RIGHT STATUS ICONS */
+.status-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 50px;
 }
