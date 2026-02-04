@@ -306,5 +306,170 @@
         <img src="assets/images/logos.png" alt="logo" />
       </div>
     </section>
+
+    <section class="customers">
+  <span class="label">CUSTOMERS</span>
+  <h2>Unlock knowledge for any industry</h2>
+  <p class="subtitle">
+    From frontier AI companies to consumer brands, leaders across industries
+    scale with Mintlify.
+  </p>
+
+  <div class="carousel-wrapper">
+    <button class="arrow left" onclick="scrollCarousel(-1)">‹</button>
+
+    <div class="carousel" id="carousel">
+      <div class="card">
+        <img src="assets/images/customers/perplexity.webp">
+        <p>How Perplexity transformed its documentation into an AI-native developer...</p>
+        <a href="#">Read story →</a>
+      </div>
+
+      <div class="card">
+        <img src="assets/images/customers/x.webp">
+        <p>How X is using Mintlify to power the developer experience for the global...</p>
+        <a href="#" class="active">Read story →</a>
+      </div>
+
+      <div class="card">
+        <img src="assets/images/customers/kalshi.webp">
+        <p>How Kalshi helps developers discover what's possible faster...</p>
+        <a href="#">Read story →</a>
+      </div>
+      <div class="card">
+        <img src="assets/images/customers/cognition.webp">
+        <p>How Cognition is using Mintlify to power the developer experience for the global...</p>
+        <a href="#">Read story →</a>
+      </div>
+      <div class="card">
+        <img src="assets/images/customers/togetherai.webp">
+        <p>How TogetherAI helps developers discover what's possible faster...</p>
+        <a href="#">Read story →</a>
+      </div>
+    </div>
+
+    <button class="arrow right" onclick="scrollCarousel(1)">›</button>
+  </div>
+</section>
+
+<section class="cta-section">
+  <h2>Make documentation<br>your winning advantage</h2>
+  <p class="cta-subtitle">
+    Join the leaders of tomorrow to future proof your documentation today.
+  </p>
+
+  <div class="cta-buttons">
+    <a href="#" class="btn primary">Get started for free</a>
+    <a href="#" class="btn secondary">Get a demo</a>
+  </div>
+
+  <div class="cta-features">
+    <div class="feature">
+      <div class="icon">🏢</div>
+      <h3>Pricing on your terms</h3>
+      <p>Pick the plan that works best for you</p>
+      <a href="#">Pricing details →</a>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="feature">
+      <div class="icon">📘</div>
+      <h3>Start building</h3>
+      <p>Deploy your documentation in minutes</p>
+      <a href="#">Quickstart →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+
+    <!-- Top row -->
+    <div class="footer-top">
+      <div class="logo">
+        <img src="assets/icons/mintlify.png" alt="mintlify logo" />
+      </div>
+
+      <div class="socials">
+        <a href="#">in</a>
+        <a href="#">X</a>
+        <a href="#">⦿</a>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Links grid -->
+    <div class="footer-grid">
+      <div>
+        <h4>Explore</h4>
+        <a href="#">Startups</a>
+        <a href="#">Enterprise</a>
+        <a href="#">Switch</a>
+        <a href="#">OSS Program</a>
+      </div>
+
+      <div>
+        <h4>Resources</h4>
+        <a href="#">Customers</a>
+        <a href="#">Blog</a>
+        <a href="#">Pricing</a>
+        <a href="#">Guides</a>
+        <a href="#">Feature Requests</a>
+      </div>
+
+      <div>
+        <h4>Documentation</h4>
+        <a href="#">Getting Started</a>
+        <a href="#">API Reference</a>
+        <a href="#">Components</a>
+        <a href="#">Changelog</a>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <a href="#">Careers</a>
+        <a href="#">Wall of Love</a>
+      </div>
+
+      <div>
+        <h4>Legal</h4>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Responsible Disclosure</a>
+        <a href="#">Terms Of Service</a>
+        <a href="#">Security</a>
+        <a href="#">DSR/DSAR</a>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Bottom row -->
+    <div class="footer-bottom">
+      <div class="security">
+        <span>Backed By Enterprise-Grade Security</span>
+      </div>
+
+      <div class="status">
+        <span class="dot"></span> All systems normal
+      </div>
+
+      <div class="copyright">
+        © 2026 Mintlify, Inc.
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+  function scrollCarousel(direction) {
+    const carousel = document.getElementById("carousel");
+    const cardWidth = carousel.querySelector(".card").offsetWidth + 24;
+    carousel.scrollLeft += direction * cardWidth;
+  }
+</script>
+
   </body>
 </html>
